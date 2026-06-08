@@ -1,14 +1,17 @@
 [
   {
-    "task": "Parse an AWS S3 bucket name from a full S3 URI (e.g., s3://my-bucket/path/to/file.txt)",
-    "format": "regex"
+    "task": "Extract AWS region codes from CloudFormation template ARNs using a pattern like 'arn:aws:service:region:account-id:resource'",
+    "format": "regex",
+    "solution_criteria": "Regex should correctly capture region codes (e.g., us-east-1, eu-west-2) from AWS ARNs, handling multiple regions in a string"
   },
   {
-    "task": "Create a CloudFormation template JSON for an AWS Lambda function with basic execution role and environment variables",
-    "format": "json"
+    "task": "Parse an AWS S3 bucket policy JSON and extract all principals that have 's3:GetObject' permission",
+    "format": "python",
+    "solution_criteria": "Function should return a list of unique principals (ARNs or accounts) that have s3:GetObject permission, handling both wildcard and specific principals"
   },
   {
-    "task": "Write a Python function that takes an AWS IAM ARN string and returns the service, resource type, and resource name as separate values",
-    "format": "python"
+    "task": "Generate a minimal AWS Lambda function configuration JSON object with required fields: FunctionName, Runtime, Role, Handler, and Code",
+    "format": "json",
+    "solution_criteria": "JSON must be valid and include all required Lambda configuration fields with appropriate placeholder values that follow AWS naming conventions"
   }
 ]
