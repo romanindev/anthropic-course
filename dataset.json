@@ -1,17 +1,50 @@
 [
   {
-    "task": "Extract AWS region codes from CloudFormation template ARNs using a pattern like 'arn:aws:service:region:account-id:resource'",
-    "format": "regex",
-    "solution_criteria": "Regex should correctly capture region codes (e.g., us-east-1, eu-west-2) from AWS ARNs, handling multiple regions in a string"
+    "prompt_inputs": {
+      "height": "178 cm",
+      "weight": "68 kg",
+      "goal": "Marathon training - high-intensity endurance with carbohydrate loading for race preparation",
+      "restrictions": "None"
+    },
+    "solution_criteria": [
+      "Meal plan covers all meals for one full day (breakfast, lunch, dinner, snacks)",
+      "Includes high carbohydrate content (55-65% of calories) appropriate for endurance athlete",
+      "Total daily calories align with marathon training needs (~3000-3500 calories for 68kg athlete)",
+      "Plan is compact and concise (under 400 words)"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a high-intensity endurance athlete (marathon runner) requiring high caloric intake and carbohydrate loading strategy"
   },
   {
-    "task": "Parse an AWS S3 bucket policy JSON and extract all principals that have 's3:GetObject' permission",
-    "format": "python",
-    "solution_criteria": "Function should return a list of unique principals (ARNs or accounts) that have s3:GetObject permission, handling both wildcard and specific principals"
+    "prompt_inputs": {
+      "height": "178 cm",
+      "weight": "75 kg",
+      "goal": "Maintain weight for weigh-in while meeting 180g protein, 250g carbs, and 3L hydration for boxing competition tomorrow",
+      "restrictions": "Gluten-free, no dairy"
+    },
+    "solution_criteria": [
+      "Meal plan totals approximately 75 kg body weight maintenance calories (2400-2600 kcal)",
+      "Macros meet or exceed: 180g protein, 250g carbs, with balanced fats",
+      "Includes hydration strategy totaling 3L across meals and beverages",
+      "All meals are gluten-free and dairy-free"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a weight-class-dependent sport athlete (boxer) needing to meet specific macro targets while maintaining hydration for weigh-in"
   },
   {
-    "task": "Generate a minimal AWS Lambda function configuration JSON object with required fields: FunctionName, Runtime, Role, Handler, and Code",
-    "format": "json",
-    "solution_criteria": "JSON must be valid and include all required Lambda configuration fields with appropriate placeholder values that follow AWS naming conventions"
+    "prompt_inputs": {
+      "height": "180 cm",
+      "weight": "90 kg",
+      "goal": "Maximize strength and muscle recovery for weightlifting competition in 2 weeks",
+      "restrictions": "None"
+    },
+    "solution_criteria": [
+      "Meal plan covers all 3 meals plus pre/post-workout nutrition",
+      "Daily protein intake meets or exceeds 1.8g per kg body weight (162g minimum)",
+      "Includes specific meal timing around training session with carbs and protein for recovery",
+      "Plan is presented in compact, easy-to-scan format suitable for a single day"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a strength/power sport athlete (weightlifter) emphasizing protein intake and recovery nutrition around training sessions"
   }
 ]
